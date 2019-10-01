@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #29434e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Details_Controller">
+   <children>
+      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="545.0" layoutY="14.0" prefHeight="29.0" prefWidth="134.0" text="Welcome...." textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="33.0" layoutY="74.0" prefHeight="150.0" prefWidth="635.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView id="detailsUserImg" fx:id="detailsUserImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/wilson.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="detailsName" layoutX="185.0" layoutY="36.0" prefHeight="17.0" prefWidth="199.0" text="Name:" textFill="#726c6c" />
+            <Label fx:id="detailsAge" layoutX="185.0" layoutY="65.0" prefHeight="17.0" prefWidth="125.0" text="Age:" textFill="#726c6c" />
+            <Label fx:id="detailsProfession" layoutX="185.0" layoutY="98.0" prefHeight="17.0" prefWidth="206.0" text="Profesion:" textFill="#726c6c" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="201.0" layoutY="238.0" prefHeight="148.0" prefWidth="467.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane layoutY="-1.0" prefHeight="41.0" prefWidth="467.0" style="-fx-background-color: #546e7a;" />
+            <Label alignment="CENTER" layoutY="6.0" prefHeight="27.0" prefWidth="467.0" text="How to find me" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+            <ImageView fx:id="detaillsWebImage" fitHeight="27.0" fitWidth="21.0" layoutX="14.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/geography_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="detailsTwitterIcon" fitHeight="29.0" fitWidth="21.0" layoutX="14.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/twitter_48px.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="detailsWeb" layoutX="35.0" layoutY="57.0" prefHeight="23.0" prefWidth="266.0" text="www.buildappswithwilson.com" />
+            <Hyperlink fx:id="detailsTwitter" layoutX="35.0" layoutY="90.0" text="\@gatheruwilson" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
